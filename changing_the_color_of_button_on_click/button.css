@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+#colorButton{
+background-color: rgb(43, 16, 195);
+border-color: rgb(132, 186, 233);
+padding: 15px;
+font-size: 20px;
+color: rgb(132, 186, 233);
+border-radius: 10px;
+box-shadow: 0 0 50px rgb(132, 186, 233);
+}
