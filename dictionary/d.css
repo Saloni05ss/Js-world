@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto;
+    width: 400px;
+    background: rgba(245, 222, 179, 0.493);
+    border: 2px solid black;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: bolder;
+    color: blueviolet;
+    display: flex;
+    margin-left: 5px;
+}
+
+.header img {
+    margin-top: 18px;
+    display: none;
+}
+.active .header img{
+    display: grid;
+}
+
+.header p {
+    margin: 10px;
+}
+
+.search input {
+    width: 90%;
+    height: 35px;
+    border: 3px solid black;
+    margin-left: 33px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.active .search input{
+    pointer-events: none;
+}
+
+.text{
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.pending .text{
+    color: rgb(13, 182, 13);
+}
+
+.error .text{
+    color: rgb(225, 52, 22);
+}
+
+.meaning p {
+    width: 98%;
+    height: 35px;
+    
+    font-size: 15px;
+}
+.synonym p {
+    width: 98%;
+    height: 35px;
+    
+    font-size: 15px;
+}
+
+.content ul {
+    list-style: none;
+}
+.word{
+    display: flex;
+}
+.word img{
+    margin-top: 20px;
+}
+.word h3{
+    padding-right: 270px;
+}
+.search p .pending{
+    color: green;
+}
+.content{
+    display: none;
+}
+.active .content{
+    display: grid;
+    overflow-y: scroll;
+    height: 300px;
+}
+.text span{
+    font-weight: bolder;
+}
